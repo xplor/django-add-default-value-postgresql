@@ -89,5 +89,6 @@ DATABASES = {
         "PORT": os.environ.get("PGPORT", 5432),
         "NAME": os.environ.get("PGDATABASE", "dadv"),
         "USER": os.environ.get("PGUSER", os.environ["USER"]),
+        "PASSWORD": os.environ.get("PGPASSWORD", ""),
     }
 }

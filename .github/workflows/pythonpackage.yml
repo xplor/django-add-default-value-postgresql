@@ -12,7 +12,7 @@ jobs:
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
+          POSTGRES_DB: dadv
         ports:
         # will assign a random free host port
         - 5432/tcp
@@ -45,6 +45,5 @@ jobs:
         PGPORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
         PGUSER: postgres
         PGPASSWORD: postgres
-        PGDATABASE: postgres
       run: |
         pipenv run tox
