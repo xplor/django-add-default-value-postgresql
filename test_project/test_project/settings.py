@@ -85,10 +85,10 @@ STATIC_URL = "/static/"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "HOST": os.environ.get("PGHOST", "localhost"),
-        "PORT": os.environ.get("PGPORT", 5432),
-        "NAME": os.environ.get("PGDATABASE", "dadv"),
-        "USER": os.environ.get("PGUSER", os.environ["USER"]),
-        "PASSWORD": os.environ.get("PGPASSWORD", ""),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+        "PORT": os.environ.get("POSTGRES_PORT", 5432),
+        "NAME": os.environ.get("POSTGRES_DB", "dadv"),
+        "USER": os.environ.get("POSTGRES_USER", os.environ["USER"]),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", ""),
     }
 }

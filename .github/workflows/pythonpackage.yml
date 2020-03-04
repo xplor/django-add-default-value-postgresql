@@ -41,9 +41,9 @@ jobs:
         pipenv run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       env:
-        PGHOST: localhost
-        PGPORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
-        PGUSER: postgres
-        PGPASSWORD: postgres
+        POSTGRES_HOST: localhost
+        POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
       run: |
         pipenv run tox
