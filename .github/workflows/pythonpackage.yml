@@ -6,6 +6,18 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:10.8
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+        # will assign a random free host port
+        - 5432/tcp
+        # needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
     strategy:
       matrix:
         python-version: [3.6, 3.7, 3.8]
@@ -28,5 +40,11 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         pipenv run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
+      env:
+        PGHOST: localhost
+        PGPORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
+        PGUSER: postgres
+        PGPASSWORD: postgres
+        PGDATABASE: postgres
       run: |
         pipenv run tox
