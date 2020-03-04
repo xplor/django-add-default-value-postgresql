@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+black = "==19.10b0"
+bumpversion = "*"
+Django = ">=3.0,<3.1"
+flake8 = "*"
+psycopg2-binary = "*"
+tox = "*"
+tox-pyenv = "*"
