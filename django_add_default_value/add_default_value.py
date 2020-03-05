@@ -72,6 +72,10 @@ class AddDefaultValue(Operation):
         if not self.is_supported_vendor(schema_editor.connection.vendor):
             return
 
+        to_model = to_state.apps.get_model(app_label, self.model_name)
+        if not self.allow_migrate_model(schema_editor.connection.alias, to_model):
+            return
+
         self.initialize_vendor_state(schema_editor)
 
         to_model = to_state.apps.get_model(app_label, self.model_name)
@@ -105,6 +109,10 @@ class AddDefaultValue(Operation):
         drop the model's table.
         """
         if not self.is_supported_vendor(schema_editor.connection.vendor):
+            return
+
+        to_model = to_state.apps.get_model(app_label, self.model_name)
+        if not self.allow_migrate_model(schema_editor.connection.alias, to_model):
             return
 
         self.initialize_vendor_state(schema_editor)
