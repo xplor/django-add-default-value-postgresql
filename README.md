@@ -78,7 +78,7 @@ You can test against multiple versions of Django using `tox`. To test across Pyt
 
 ## License
 
-``django-add-default-value-postgresql`` is released under the Apache 2.0 License.
+django-add-default-value-postgresql is released under the Apache 2.0 License, based on [django-add-default-value](https://github.com/3YOURMIND/django-add-default-value/) by [3YOURMIND](https://github.com/3YOURMIND) which is also released under the Apache 2.0 License.
 
 ### Changes from original source
 
