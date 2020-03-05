@@ -1,3 +1,4 @@
+# Copyright 2020 Mariana Tek
 # Copyright 2018 3YOURMIND GmbH
 
 # Licensed under the Apache License, Version 2.0 (the "License");

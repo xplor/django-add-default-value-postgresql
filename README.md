@@ -9,7 +9,7 @@ Based on [django-add-default-value](https://github.com/3YOURMIND/django-add-defa
 
 
 [![PyPi](https://img.shields.io/pypi/v/django-add-default-value-postgresql.svg?branch=master)](https://pypi.python.org/pypi/django-add-default-value-postgresql/)
-[![License](https://img.shields.io/github/license/3yourmind/django-add-default-value.svg)](./LICENSE)
+[![License](https://img.shields.io/github/license/Mariana-Tek/django-add-default-value-postgresql.svg)](./LICENSE)
 
 [![CI](https://github.com/Mariana-Tek/django-add-default-value-postgresql/workflows/Python%20package/badge.svg)](https://github.com/Mariana-Tek/django-add-default-value-postgresql/actions?query=workflow%3A%22Python+package%22)
 
@@ -88,6 +88,6 @@ You can test against multiple versions of Django using `tox`. To test across Pyt
 License
 -------
 
-``django-add-default-value`` is released under the Apache 2.0 License.
+``django-add-default-value-postgresql`` is released under the Apache 2.0 License.
 
 
