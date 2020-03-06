@@ -7,7 +7,7 @@ Based on [django-add-default-value](https://github.com/3YOURMIND/django-add-defa
 
 
 [![CI](https://github.com/Mariana-Tek/django-add-default-value-postgresql/workflows/Python%20package/badge.svg)](https://github.com/Mariana-Tek/django-add-default-value-postgresql/actions?query=workflow%3A%22Python+package%22)
-[![PyPi](https://img.shields.io/pypi/v/django-add-default-value-postgresql.svg?branch=master)]
+[![PyPi](https://img.shields.io/pypi/v/django-add-default-value-postgresql.svg?branch=master)](https://pypi.org/project/django-add-default-value-postgresql/)
 
 
 ## Dependencies
