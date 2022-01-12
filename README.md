@@ -11,7 +11,7 @@ Based on [django-add-default-value](https://github.com/3YOURMIND/django-add-defa
 ## Dependencies
 
 - Python 3.6, 3.7, 3.8, or 3.9
-- Django 2.2, 3.0, or 3.1
+- Django 2.2, 3.0, 3.1, 3.2, or 4.0
 
 ## Installation
 
@@ -76,4 +76,4 @@ django-add-default-value-postgresql is released under the Apache 2.0 License, ba
 - removed MSSQL-related code
 - added allow_migrate_model check on database_forwards and database_backwards
 - added support for Python 3.7, 3.8, and 3.9, dropped support for <3.6
-- added support for Django 2.2, 3.0, and 3.1, dropped support for <2.2
+- added support for Django 2.2, 3.0, 3.1, 3.2, and 4.0, dropped support for <2.2
