@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-black = "==19.10b0"
+black = "==24.3.0"
 Django = ">=4.0,<4.1"
 flake8 = "*"
 psycopg2-binary = "==2.8.*"
