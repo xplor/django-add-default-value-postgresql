@@ -8,10 +8,10 @@ Based on [django-add-default-value](https://github.com/3YOURMIND/django-add-defa
 [![CI](https://github.com/Mariana-Tek/django-add-default-value-postgresql/workflows/Python%20package/badge.svg)](https://github.com/Mariana-Tek/django-add-default-value-postgresql/actions?query=workflow%3A%22Python+package%22)
 [![PyPi](https://img.shields.io/pypi/v/django-add-default-value-postgresql.svg?branch=master)](https://pypi.org/project/django-add-default-value-postgresql/)
 
-## Dependencies
+## Supported Versions of Python and Django
 
-- Python 3.6, 3.7, 3.8, or 3.9
-- Django 2.2, 3.0, 3.1, 3.2, or 4.0
+- Python 3.10, 3.11, and 3.12
+- Django 4.0, 4.1, 4.2, 5.0, 5.1, and 5.2
 
 ## Installation
 
@@ -75,5 +75,5 @@ django-add-default-value-postgresql is released under the Apache 2.0 License, ba
 - removed MySQL-related code
 - removed MSSQL-related code
 - added allow_migrate_model check on database_forwards and database_backwards
-- added support for Python 3.7, 3.8, and 3.9, dropped support for <3.6
-- added support for Django 2.2, 3.0, 3.1, 3.2, and 4.0, dropped support for <2.2
+- added support for Python 3.10, 3.11, and 3.12, dropped support for <3.10
+- added support for Django 4.0, 4.1, 4.2, 5.0, 5.1, and 5.2, dropped support for <4.0
