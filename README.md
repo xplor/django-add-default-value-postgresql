@@ -15,7 +15,7 @@ Based on [django-add-default-value](https://github.com/3YOURMIND/django-add-defa
 
 ## Installation
 
-`pip install django-add-default-value-postgresql`
+`uv add django-add-default-value-postgresql`
 
 You can then use `AddDefaultValue` in your migration file to transfer the default
 values to your database. Afterwards, it's just the usual `./manage.py migrate`.
