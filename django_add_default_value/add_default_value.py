@@ -12,11 +12,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 # or implied. See the License for the specific language governing
 # permissions and limitations under the License.
+from datetime import date, datetime
 
 import django
 from django.db.migrations.operations.base import Operation
 from django.db import models
-from datetime import date, datetime
 
 NOW = "__NOW__"
 TODAY = "__TODAY__"
