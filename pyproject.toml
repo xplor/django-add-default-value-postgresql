@@ -43,3 +43,6 @@ dev = [
     "tox>=4.25.0",
     "tox-uv>=1.25.0",
 ]
+
+[tool.setuptools]
+packages = ["django_add_default_value"]
